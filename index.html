@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valentine 💘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>Will you be my Valentine? 💘</h1>
+
+    <div class="buttons">
+      <button id="yesBtn">Yes</button>
+      <button id="noBtn">No</button>
+    </div>
+
+    <img id="biasImage" src="lalala.png" alt="bias" />
+  </div>
+
+  <!-- AUDIO (hidden, plays on YES) -->
+  <audio id="loveSong" src="txt.m4a" preload="auto"></audio>
+
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+  <script>
+const password = "BlubbyValentine1234";
+let attempt = prompt("Enter password to see your Valentine page:");
+
+if (attempt !== password) {
+  document.body.innerHTML = "<h1>Access Denied ❌</h1>";
+}
+</script>
+</body>
+</html>
